@@ -1,0 +1,231 @@
+Home
+	Notifications
+	Focus Assist
+		Off
+	Power & Sleep
+		! import power plan
+	Storage
+		Storage Sense
+			Turn off
+		Change where new content is saved
+			new documents will save to
+				network drive
+			new photos will save to
+				network drive
+	Multitasking
+		Show suggestions in your timeline
+			disable
+	Shared Experiences
+		Share across devices
+			disable
+	Clipboard
+		Clipboard history
+			enable
+	Remote Desktop
+		disable
+Personalization
+	Colors
+		Dark Theme
+		Auto choose accent color
+	Start
+		show recently added apps
+			disable
+		show suggestions occasionally in start
+			disable
+		show recently opened items in jump lists on start or the taskbar and in file explorer quick access
+			disable
+	Taskbar
+		Combine taskbar buttons
+			never
+		notification area
+			turn system icons on/off
+				clock
+					on
+				volume
+					on
+				network
+					on
+				power
+					on
+				input indicator
+					off
+				location
+					off
+				action center
+					off								
+				touch keyboard
+					off
+				windows ink workspace
+					off
+				toucpad
+					off
+				microphone
+					off
+				meet now
+					off
+		Multiple displays
+			show taskbar on all displays
+				show taskbar buttons on
+					taskbar where window is open
+				combine buttons on other taskbars
+					never
+Apps
+	Set default apps
+		email
+			outlook
+		web browser
+			chrome
+		*.txt
+			sublime text 3
+		programming languages file extensions
+			vs code
+Date & Time
+	Set timezone to UTC-6
+Gaming
+	xbox game bar
+		open game bar with xbox button
+			enable
+	game mode
+		off
+Ease of access
+	Interaction
+		Keyboard
+			Sticky keys shortcut key
+				disable
+			toggle keys shortcut key
+				disable
+			filter keys
+				disable
+			Underline access keys when available
+				enable
+			use the PrtScn button to open screen snipping
+				enable
+Search
+	Permissions & History
+		SafeSearch
+			off
+		Cloud content search
+			microsoft account
+				off
+			work or school account
+				off
+		History
+			search history on this device
+				off
+Privacy
+	general
+		apps using advertising id
+			off
+		websites provide locally relevant content
+			off
+		windows track app launches
+			off
+		suggested contetn in settings app
+			off
+	speech
+		speech recognition
+			off
+	inking and typing personaliztaion
+		off
+	activity history
+		store history on this device
+			off
+		send activity history to microsoft
+			off
+	location
+		app access
+			off
+	camera
+		app access
+			off
+	voice activation
+		app access
+			off
+	notifications
+		app access
+			off
+	contacts
+		app access
+			off
+	calandar
+		app access
+			off
+	phone calls
+		app access
+			off
+	call history
+		app access
+			off
+	email
+		app access
+			off
+	tasks
+		app access
+			off
+	messaging
+		app access
+			off
+	radios
+		app access
+			off
+	other devices
+		app access
+			off
+	app diagnostics
+		app access
+			off
+	videos
+		app access
+			off
+Updates & Security
+		Active hours
+			8am - 50pm
+		Delivery optimization
+			Allow downloads from other pcs
+				off
+		troubleshoot
+			recommended troubleshooting
+				dont run troubleshooters
+		find my device
+			off (desktops only?)
+
+Windows Explorer
+	general
+		open file explorer to
+			quick access -> this pc
+		privacy
+			show recently used files in quick access
+				disable
+			show frequently used folders in quick access
+				disable
+	view
+		display full path in the title bar
+			enable
+		hide empty drives
+			disable
+		hide extensions for known file types
+			disable
+	search
+		dont use the index when searching in file folders
+			enable
+		when searching non-indexed locations
+			include system directories
+				disable
+			include compress files
+				enable
+	remove quick access
+		music
+		videos
+		3d objects
+	move library locations?
+		documents to network/extra drive
+		downloads to network/extra drive
+		pictures to network/extra drive
+	pin ribbon 
+		always open
+
+Task Manager
+	Default Tab
+		Performance
+	Show Graphs
+	Show logical processors

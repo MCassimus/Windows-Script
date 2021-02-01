@@ -1,0 +1,29 @@
+(Done) Chocolatey
+	7zip
+	discord
+	geforce-experience
+	gimp
+	googlechrome
+	powertoys
+	spotify
+	steam
+	sublimetext3
+	vscode
+	wallcat
+	yubico-authenticator
+
+(Done) Office
+	Automated install
+
+Store Apps
+	icloud
+	taskbarx
+
+Misc
+	virtual desktop streamer
+	sidequest
+	oculus
+	icue?
+	aura sync?
+	razer synapse?
+	raspi imager?

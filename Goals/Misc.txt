@@ -1,0 +1,18 @@
+Map network drives
+Uninstall extra programs
+uninstall onedrive
+customize start menu
+	unpin tiles
+	clean folders
+		schedule a service for this? 
+install/uninstall windows features
+startup shortcuts in shell:common startup
+	yubico auth
+	wallcat (task-schedule?)
+disable all startup things
+o&o shutup
+#powershell profile & regedit theme
+remove - shortcut postfix on shortcuts
+context menu edits
+	powershell here (always visible)
+remove edge shortcut on desktop

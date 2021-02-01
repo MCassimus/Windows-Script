@@ -1,0 +1,12 @@
+7zip
+discord
+geforce-experience
+gimp
+googlechrome
+powertoys
+spotify
+steam
+sublimetext3
+vscode
+wallcat
+yubico-authenticator

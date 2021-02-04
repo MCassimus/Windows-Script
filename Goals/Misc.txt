@@ -1,18 +1,18 @@
-Map network drives
-Uninstall extra programs
+Map network drives ? 
+Uninstall extra programs/bloat
 uninstall onedrive
 customize start menu
 	unpin tiles
-	clean folders
+	(done - look into creating a task schedule for this and posting into a scripts folder) clean folders
 		schedule a service for this? 
 install/uninstall windows features
 startup shortcuts in shell:common startup
-	yubico auth
+	yubikey authenticator
 	wallcat (task-schedule?)
 disable all startup things
 o&o shutup
-#powershell profile & regedit theme
-remove - shortcut postfix on shortcuts
+(done)powershell profile & regedit theme
+remove - shortcut suffix on shortcuts
 context menu edits
 	powershell here (always visible)
 remove edge shortcut on desktop

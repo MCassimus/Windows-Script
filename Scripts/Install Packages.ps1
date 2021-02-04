@@ -1,4 +1,5 @@
-
+$chocoCmd = Get-Command –Name 'choco' –ErrorAction SilentlyContinue –WarningAction SilentlyContinue | Select-Object –ExpandProperty Source
+if ($chocoCmd -eq $null) { Invoke-Command -FilePath "Install Chocolatey.ps1" }
 
 [string[]]$ChocoPackages = Get-Content -Path $PWD\..\Misc\ChocolateyPackages.txt
 

@@ -1,9 +1,8 @@
 Home
-	Notifications
 	Focus Assist
 		Off
-	Power & Sleep
-		! import power plan
+	(done) Power & Sleep
+		(done) import power plan
 	Storage
 		Storage Sense
 			Turn off
@@ -80,7 +79,7 @@ Apps
 		programming languages file extensions
 			vs code
 Date & Time
-	Set timezone to UTC-6
+	(done) Set timezone to UTC-6
 Gaming
 	xbox game bar
 		open game bar with xbox button
@@ -90,7 +89,7 @@ Gaming
 Ease of access
 	Interaction
 		Keyboard
-			Sticky keys shortcut key
+			(Done? maybe)Sticky keys shortcut key
 				disable
 			toggle keys shortcut key
 				disable
@@ -114,7 +113,7 @@ Search
 				off
 Privacy
 	general
-		apps using advertising id
+		(done) apps using advertising id
 			off
 		websites provide locally relevant content
 			off
@@ -127,7 +126,7 @@ Privacy
 			off
 	inking and typing personaliztaion
 		off
-	activity history
+	activity history (done)
 		store history on this device
 			off
 		send activity history to microsoft
@@ -179,8 +178,8 @@ Privacy
 			off
 Updates & Security
 		Active hours
-			8am - 50pm
-		Delivery optimization
+			8am - 5pm
+		(done)Delivery optimization
 			Allow downloads from other pcs
 				off
 		troubleshoot
@@ -191,9 +190,9 @@ Updates & Security
 
 Windows Explorer
 	general
-		open file explorer to
+		(done) open file explorer to
 			quick access -> this pc
-		privacy
+		(done)privacy
 			show recently used files in quick access
 				disable
 			show frequently used folders in quick access
@@ -203,7 +202,7 @@ Windows Explorer
 			enable
 		hide empty drives
 			disable
-		hide extensions for known file types
+		(done) hide extensions for known file types
 			disable
 	search
 		dont use the index when searching in file folders
@@ -214,8 +213,8 @@ Windows Explorer
 			include compress files
 				enable
 	remove quick access
-		music
-		videos
+		(done) music
+		(done)videos
 		3d objects
 	move library locations?
 		documents to network/extra drive

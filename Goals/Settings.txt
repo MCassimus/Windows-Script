@@ -6,11 +6,6 @@ Home
 	Storage
 		Storage Sense
 			Turn off
-		Change where new content is saved
-			new documents will save to
-				network drive
-			new photos will save to
-				network drive
 	Multitasking
 		Show suggestions in your timeline
 			disable
@@ -66,7 +61,7 @@ Personalization
 			show taskbar on all displays
 				show taskbar buttons on
 					taskbar where window is open
-				combine buttons on other taskbars
+				(done? test in vm)combine buttons on other taskbars
 					never
 Apps
 	Set default apps
@@ -126,7 +121,7 @@ Privacy
 			off
 	inking and typing personaliztaion
 		off
-	activity history (done)
+	(done) activity history
 		store history on this device
 			off
 		send activity history to microsoft

@@ -1,18 +1,17 @@
-Map network drives ? 
 Uninstall extra programs/bloat
 uninstall onedrive
-customize start menu
+!!customize start menu
 	unpin tiles
-	(done - look into creating a task schedule for this and posting into a scripts folder) clean folders
+	(done) clean folders
 		schedule a service for this? 
-install/uninstall windows features
-startup shortcuts in shell:common startup
+(done)install/uninstall windows features
+(done)startup shortcuts in shell:startup
 	yubikey authenticator
-	wallcat (task-schedule?)
-disable all startup things
+	wallcat
+!!disable all startup things
 o&o shutup
 (done)powershell profile & regedit theme
-remove - shortcut suffix on shortcuts
-context menu edits
+(done? test with VM)remove - shortcut suffix on shortcuts
+!!context menu edits
 	powershell here (always visible)
-remove edge shortcut on desktop
+!!remove edge shortcut on desktop

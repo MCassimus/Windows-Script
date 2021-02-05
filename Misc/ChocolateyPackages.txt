@@ -4,6 +4,7 @@ geforce-experience
 gimp
 googlechrome
 powertoys
+sidequest
 spotify
 steam
 sublimetext3

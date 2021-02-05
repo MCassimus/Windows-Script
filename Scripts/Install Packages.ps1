@@ -10,3 +10,9 @@ foreach($pkg in $ChocoPackages)
 	choco install $pkg -y
 	$index++
 }
+
+
+#Create startup shortcuts for installed apps
+Copy-Item "$([System.Environment]::GetEnvironmentVariable('APPDATA','process'))\Microsoft\Windows\Start Menu\Programs\Yubico\Yubico Authenticator.lnk" -Destination "$userStartPath\Yubico Authenticator.lnk"
+$userStartPath = "$([System.Environment]::GetEnvironmentVariable('APPDATA','process'))\Microsoft\Windows\Start Menu\Programs\Startup"
+./Misc/CreateShortcut.ps1 "wallcat" "$userStartPath\Wallcat.lnk"

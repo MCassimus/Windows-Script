@@ -1,4 +1,3 @@
-#Invoke-Expression "Scripts/$(Get-ChildItem -Path "Scripts" -Name)"
 #Run scripts from the directory
 $scripts = Get-ChildItem -Path "Scripts" -Name
 $scriptsIndex = 1
@@ -26,3 +25,13 @@ foreach ($keys in $regkeys)
 	$regIndex++
 }
 Write-Host "Completed import of registry keys"
+
+
+#Create script folder and add to system path
+New-Item -ItemType directory "C:\Users\Public\Documents\WindowsPowerShell\Scripts"
+$path = [System.Environment]::GetEnvironmentVariable('Path','machine')
+$path += ";C:\Users\Public\Documents\WindowsPowerShell\Scripts"
+[System.Environment]::SetEnvironmentVariable("Path", $path, "Machine")
+
+#Copy scripts to folder that will be available to the user
+cp "Scripts\Clean Start Menu.ps1" "C:\Users\Public\Documents\WindowsPowerShell\Scripts\CleanStartMenu.ps1"

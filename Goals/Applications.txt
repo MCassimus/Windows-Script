@@ -5,6 +5,7 @@
 	gimp
 	googlechrome
 	powertoys
+	sidequest
 	spotify
 	steam
 	sublimetext3
@@ -21,7 +22,6 @@ Store Apps
 
 Misc
 	virtual desktop streamer
-	sidequest
 	oculus
 	icue?
 	aura sync?

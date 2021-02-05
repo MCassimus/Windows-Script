@@ -210,11 +210,7 @@ Windows Explorer
 	remove quick access
 		(done) music
 		(done)videos
-		3d objects
-	move library locations?
-		documents to network/extra drive
-		downloads to network/extra drive
-		pictures to network/extra drive
+		(done)3d objects
 	pin ribbon 
 		always open
 

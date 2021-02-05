@@ -1,31 +1,47 @@
 #disable bing search results from start menu search
-Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search -Name BingSearchEnabled -Type DWord -Value 0
+If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search")) {
+	New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Force | Out-Null
+}
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search" -Name "BingSearchEnabled" -Type DWord -Value 0
 
 #disable letting apps use advertising id
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AdvertisingInfo -Name Enabled -Type DWord -Value 0
 
 #disable Smart screen
-Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost -Name EnableWebContentEvaluation -Type DWord =Value 0
+If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost")) {
+	New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" -Force | Out-Null
+}
+Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\AppHost" -Name "EnableWebContentEvaluation" -Type DWord -Value 0
 
 #Wifi sense hotspot sharing
-Set-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting -Name value -Type DWord -Value 0
-Set-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots -Name value -Type DWord -Value 0
+If (!(Test-Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting")) {
+	New-Item -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" -Force | Out-Null
+}
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowWiFiHotSpotReporting" -Name "value" -Type DWord -Value 0
+
+If (!(Test-Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots")) {
+	New-Item -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" -Force | Out-Null
+}
+Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Wifi\AllowAutoConnectToWiFiSenseHotspots" -Name "value" -Type DWord -Value 0
 
 #location tracking disable
 Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name SensorPermissionState -Type DWord -Value 0
 Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc\Service\Configuration -Name Status -Type DWord -Value 0
 
 #disable activity tracking
+If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System")) {
+	New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System" -Force | Out-Null
+}
 @('EnableActivityFeed', 'PublishUserActivities', 'UploadUserActivities') | ForEach-Object {
-	Set-ItemProperty -Path HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System -Name $_ -Type Dword -Value 0
+	Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System" -Name $_ -Type Dword -Value 0
 }
 
 #Run o&o shutup
 Write-Host "Running O&O Shutup with Recommended Settings"
 Import-Module BitsTransfer
-Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination Misc/oosu10.exe	
-./oosu10.exe Misc/ooshutup10.cfg /quiet
-Remove-Item .\oosu10.exe
+Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination ../Misc/oosu10.exe	
+../Misc/oosu10.exe Misc/ooshutup10.cfg /quiet
+Remove-Item ..\Misc\oosu10.exe
 
 
 #I might go through this mess one day

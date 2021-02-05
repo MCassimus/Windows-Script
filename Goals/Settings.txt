@@ -19,7 +19,7 @@ Home
 		disable
 Personalization
 	Colors
-		Dark Theme
+		(done)Dark Theme
 		Auto choose accent color
 	Start
 		show recently added apps

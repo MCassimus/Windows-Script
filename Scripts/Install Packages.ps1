@@ -1,5 +1,9 @@
 $chocoCmd = Get-Command –Name 'choco' –ErrorAction SilentlyContinue –WarningAction SilentlyContinue | Select-Object –ExpandProperty Source
-if ($chocoCmd -eq $null) { Invoke-Command -FilePath "Install Chocolatey.ps1" }
+if ($chocoCmd -eq $null) 
+{ 
+	Write-Host "Chocolatey not found - Adding before packages are installed"
+	Invoke-Command -FilePath "Install Chocolatey.ps1" 
+}
 
 [string[]]$ChocoPackages = Get-Content -Path $PWD\..\Misc\ChocolateyPackages.txt
 
@@ -15,4 +19,4 @@ foreach($pkg in $ChocoPackages)
 #Create startup shortcuts for installed apps
 Copy-Item "$([System.Environment]::GetEnvironmentVariable('APPDATA','process'))\Microsoft\Windows\Start Menu\Programs\Yubico\Yubico Authenticator.lnk" -Destination "$userStartPath\Yubico Authenticator.lnk"
 $userStartPath = "$([System.Environment]::GetEnvironmentVariable('APPDATA','process'))\Microsoft\Windows\Start Menu\Programs\Startup"
-./Misc/CreateShortcut.ps1 "wallcat" "$userStartPath\Wallcat.lnk"
+../Misc/CreateShortcut.ps1 "wallcat" "$userStartPath\Wallcat.lnk"

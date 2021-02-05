@@ -15,9 +15,9 @@ $taskSettings = New-ScheduledTaskSettingsSet –Compatibility Win8
 
 # Set up the task, and register it
 $task = New-ScheduledTask –Action $taskAction –Principal $taskUserPrincipal –Trigger $taskTrigger –Settings $taskSettings
-Register-ScheduledTask –TaskName 'Run a Choco Upgrade All at Startup' –InputObject $task –Force
+Register-ScheduledTask –TaskName "ChocoUpdate" –InputObject $task
 
 #Accept installs globally
 choco feature enable -n allowGlobalConfirmation
 
-Write-Host "Done Installing Chocolatey"
+Write-Host 'Done Installing Chocolatey'

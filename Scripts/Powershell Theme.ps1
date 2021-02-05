@@ -1,5 +1,5 @@
 $currentDir = $PWD
-Set-Location "$currentDir\Misc\SolarizedCLI\solarized-master"
+Set-Location ..\Misc\SolarizedCLI\solarized-master
 regedit /s solarized-dark.reg
 Invoke-Expression .\Update-StartMenu.ps1
 Set-Location $currentDir

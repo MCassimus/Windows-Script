@@ -28,10 +28,10 @@ Write-Host "Completed import of registry keys"
 
 
 #Create script folder and add to system path
-New-Item -ItemType directory "C:\Users\Public\Documents\WindowsPowerShell\Scripts"
+New-Item -ItemType directory "C:\Users\Public\Documents\WindowsPowerShell\Scripts" -Force
 $path = [System.Environment]::GetEnvironmentVariable('Path','machine')
 $path += ";C:\Users\Public\Documents\WindowsPowerShell\Scripts"
 [System.Environment]::SetEnvironmentVariable("Path", $path, "Machine")
 
 #Copy scripts to folder that will be available to the user
-cp "Scripts\Clean Start Menu.ps1" "C:\Users\Public\Documents\WindowsPowerShell\Scripts\CleanStartMenu.ps1"
+Copy-Item "Scripts\Clean Start Menu.ps1" "C:\Users\Public\Documents\WindowsPowerShell\Scripts\CleanStartMenu.ps1" -Force

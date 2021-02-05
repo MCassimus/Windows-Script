@@ -19,11 +19,3 @@
 Store Apps
 	icloud
 	taskbarx
-
-Misc
-	virtual desktop streamer
-	oculus
-	icue?
-	aura sync?
-	razer synapse?
-	raspi imager?

@@ -1,5 +1,5 @@
-Uninstall extra programs/bloat
-uninstall onedrive
+(done)Uninstall extra programs/bloat
+(done)uninstall onedrive
 !!customize start menu
 	unpin tiles
 	(done) clean folders

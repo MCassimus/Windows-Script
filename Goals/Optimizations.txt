@@ -1,5 +1,5 @@
 Turn off disk defrag
 (done)internet speed issues (qos thingy?)
 services enable/disable?
-windows update things
+(done)windows update things
 (done)disable hibernation page file

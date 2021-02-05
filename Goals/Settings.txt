@@ -3,7 +3,7 @@ Home
 		Off
 	(done) Power & Sleep
 		(done) import power plan
-	Storage
+	(done)Storage
 		Storage Sense
 			Turn off
 	Multitasking

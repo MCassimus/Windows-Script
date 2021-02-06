@@ -9,9 +9,9 @@
 	yubikey authenticator
 	wallcat
 !!disable all startup things
-o&o shutup
+(done?)o&o shutup
 (done)powershell profile & regedit theme
-(done? test with VM)remove - shortcut suffix on shortcuts
+(done)remove - shortcut suffix on shortcuts
 !!context menu edits
 	powershell here (always visible)
-!!remove edge shortcut on desktop
+(done)remove edge shortcut on desktop

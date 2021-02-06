@@ -1,12 +1,12 @@
 Home
-	Focus Assist
+	(done)Focus Assist
 		Off
 	(done) Power & Sleep
 		(done) import power plan
 	(done)Storage
 		Storage Sense
 			Turn off
-	Multitasking
+	(done)Multitasking
 		Show suggestions in your timeline
 			disable
 	Shared Experiences
@@ -22,14 +22,14 @@ Personalization
 		(done)Dark Theme
 		Auto choose accent color
 	Start
-		show recently added apps
+		(done)show recently added apps
 			disable
-		show suggestions occasionally in start
+		(done)show suggestions occasionally in start
 			disable
-		show recently opened items in jump lists on start or the taskbar and in file explorer quick access
+		(done)show recently opened items in jump lists on start or the taskbar and in file explorer quick access
 			disable
 	Taskbar
-		Combine taskbar buttons
+		(done)Combine taskbar buttons
 			never
 		notification area
 			turn system icons on/off
@@ -207,10 +207,11 @@ Windows Explorer
 				disable
 			include compress files
 				enable
-	remove quick access
+	remove quick access (can I remove the whole link in explorer?)
 		(done) music
-		(done)videos
-		(done)3d objects
+		(done) videos
+		(done) 3d objects
+		pictures
 	pin ribbon 
 		always open
 

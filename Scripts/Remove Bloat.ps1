@@ -80,3 +80,6 @@ foreach ($Bloat in $Bloatware) {
 	Write-Host "($index/$($Bloatware.Count)) Trying to remove $Bloat."
 	$index++
 }
+
+#remove edge shortcut from desktop
+Remove-Item -Force -Path "C:\Users\Public\Desktop\Microsoft Edge.lnk"

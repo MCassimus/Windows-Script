@@ -31,7 +31,7 @@ Personalization
 	Taskbar
 		(done)Combine taskbar buttons
 			never
-		notification area
+		(too complicated) notification area
 			turn system icons on/off
 				clock
 					on
@@ -86,13 +86,13 @@ Ease of access
 		Keyboard
 			(Done? maybe)Sticky keys shortcut key
 				disable
-			toggle keys shortcut key
+			(Done? test in vm)toggle keys shortcut key
 				disable
 			filter keys
 				disable
 			Underline access keys when available
 				enable
-			use the PrtScn button to open screen snipping
+			(done - test if working in vm)use the PrtScn button to open screen snipping
 				enable
 Search
 	Permissions & History

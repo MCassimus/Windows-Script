@@ -6,6 +6,16 @@ Set-ItemProperty -Path HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\
 
 #disable sticky keys prompt
 Set-ItemProperty -Path 'HKCU:\Control Panel\Accessibility\StickyKeys' -Name Flags -Type String -Value "506"
+#disable toggle keys prompt
+Set-ItemProperty -Path 'HKCU:\Control Panel\Accessibility\ToggleKeys' -Name Flags -Type String -Value "58"
+#disable filter keys
+Set-ItemProperty -Path 'HKCU:\Control Panel\Accessibility\Keyboard Response' -Name Flags -Type String -Value "122"
+#underline access keys enable
+Set-ItemProperty -Path 'HKCU:\Control Panel\Accessibility\Keyboard Preference' -Name On -Type String -Value 1
+#PrtScr for snip and sketch
+Set-ItemProperty -Path 'HKCU:\Control Panel\Keyboard' -Name PrintScreenKeyForSnippingEnabled -Type DWord -Value 1
+
+
 
 #hide taskview
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name ShowTaskViewButton -Type DWord -Value 0

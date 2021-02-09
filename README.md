@@ -17,6 +17,7 @@ After running this script, I only need to login (not included in scripts for obv
 ## Scripts
 - Clean Start Menu ([Clean Start Menu.ps1](https://github.com/MCassimus/Windows-Script/blob/main/Scripts/Clean%20Start%20Menu.ps1))
 	- Replaces folders in start menu with their program shortcut where applicable
+	- Running the script in the parent directory adds this to the public profile and adds the directory to the user path environment variable for convenient use
 - Install Chocolatey ([Install Chocolatey.ps1](https://github.com/MCassimus/Windows-Script/blob/main/Scripts/Install%20Chocolatey.ps1))
 	- Installs the chocolatey package manager
 	- Creates a scheduled task to update programs every day at 5:00 AM
@@ -105,3 +106,119 @@ After running this script, I only need to login (not included in scripts for obv
 	- Remove the "- Shortcut" post-fix from the Send to (Desktop) context-menu option
 - [Internet Speed Fix](https://github.com/MCassimus/Windows-Script/blob/main/Registry%20Keys/Internet%20Speed%20Fix.reg)
 	- Add registry keys to remove traffic priorities to connection checks, windows update, etc. 
+
+# To Do
+- GUI for script
+	- Maybe create a program to act like the settings app for ease of use and automatically write the .reg file to import. For the apps part, add option to create a shell:startup or shell:common startup shortcut
+- create laptop/desktop versions
+- Convert scripts into .reg files where applicable (merges seem to be significantly faster)
+- Compare dism features to default so not every single package is listed in the script
+- Context menu edits
+	- Powershell here always show (admin option available?)
+	- Remove some options that arent used?
+	- clean shell:sendto
+- Customize start menu tile layout (something with xml I think is how this is done?)
+	- I like everything unpinned
+- disable all things for startup programs
+	- blacklist some apps such as yubico authenticator
+- Clean Start Menu script automation
+	- task schedule? (every restart and/or login?)
+	- can I do this after a program is installed?
+- Disable unnecessary services (should also document their purpose in comments just in case)
+- Task manager
+	- Default tab set to performance
+	- Show graphs
+	- Show logical processors on CPU tab
+- Windows explorer regedits
+	- View
+		- show full path in title bar
+		- diable hiding of empty drives
+	- Search
+		- Dont use the index when searching in file folders
+		- When searching non-indexed locations
+			- dont include system directories
+			- include compressed/zipped folders
+	- Remove pictures pin from quick access
+	- Pin windows explorer ribbon to always be open
+- Complete regedits for windows settings
+	- System
+		- Disable Shared Experiences
+		- Enable clipboard history
+		- Remote Desktop (disable laptop/enable desktop)
+	- Personalization
+		- Auto choose accent color
+		- taskbar
+			- create list of enabled/disabled system icons
+				- clock - on
+				- volume - on
+				- network - on
+				- power - on (when applicable)
+				- input indicator - off
+				- location - off
+				- action center - off
+				- touch keyboard - off
+				- windows ink workspace - off
+				- touchpad - off
+				- microphone - off
+				- meet now - off
+			- show taskbar on multiple displays
+				- show window on taskbar where the window is open
+	- Apps 
+		- Default apps
+			- Web - Google Chrome
+			- Email - Outlook
+			- .txt - Sublime Text 3
+			- Anything associated with programming - VS code
+	- Gaming 
+		- enable xbox game bar opens with xbox button 
+		- disable Game mode
+	- Search
+		- Permissions & History
+			- disable SafeSearch
+			- Cloud content search
+				- microsoft account - off
+				- work of school account - off
+			- disable search history on this device
+	- Privacy
+		- General
+			- disable Websites provide locally relevant content
+			- disable windows track app launches
+			- disable suggested content in settings app
+		- Speech
+			- turn off speech recognition
+		- Inking and Typing personalization
+			- disable completely
+		- Location
+			- disable app access
+		- Camera
+			- disable app access
+		- Voice Activation
+			- disable app access
+		- Notifications
+			- disable app access
+		- Contacts
+			- disable app access
+		- Calandar
+			- disable app access
+		- Phone Calls
+			- disable app access
+		- Call History
+			- disable app access
+		- Email
+			- disable app access
+		- Tasks
+			- disable app access
+		- Messaging
+			- disable app access
+		- Radios
+			- disable app access
+		- Other Devices
+			- disable app access
+		- App Diagnostics
+			- disable app access
+		- Videos
+			- disable app access
+	- Updates & Security
+		- set active hours to 8:00AM to 5:00PM
+		- dont run recommended troubleshooting
+		- find my device (enable laptops/disable desktops)

@@ -15,8 +15,6 @@ Set-ItemProperty -Path 'HKCU:\Control Panel\Accessibility\Keyboard Preference' -
 #PrtScr for snip and sketch
 Set-ItemProperty -Path 'HKCU:\Control Panel\Keyboard' -Name PrintScreenKeyForSnippingEnabled -Type DWord -Value 1
 
-
-
 #hide taskview
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name ShowTaskViewButton -Type DWord -Value 0
 
@@ -56,13 +54,6 @@ If (!([System.Windows.Forms.Control]::IsKeyLocked('NumLock'))) {
 	$wsh.SendKeys('{NUMLOCK}')
 }
 
-#always show details while moving/deleting files
-Write-Host "Showing file operations details..."
-If (!(Test-Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager")) {
-	New-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" | Out-Null
-}
-Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\OperationStatusManager" -Name "EnthusiastMode" -Type DWord -Value 1
-
 #open full view of task manager
 Write-Host "Showing task manager details..."
 $taskmgr = Start-Process -WindowStyle Hidden -FilePath taskmgr.exe -PassThru
@@ -81,3 +72,6 @@ Remove-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\StorageSense\
 #set theme to dark mode
 Write-Host "Enabling Dark Mode"
 Set-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme -Value 0
+
+#remove edge shortcut from desktop
+Remove-Item -Force -Path "C:\Users\Public\Desktop\Microsoft Edge.lnk"

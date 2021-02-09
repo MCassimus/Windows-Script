@@ -1,16 +1,8 @@
-$currentDir = $PWD
-Set-Location ..\Misc\SolarizedCLI\solarized-master
+wget https://github.com/neilpa/cmd-colors-solarized/archive/master.zip -UseBasicParsing -OutFile SolarizedCLI.zip
+Expand-Archive SolarizedCLI.zip 
+rm SolarizedCLI.zip
+Set-Location -Path "SolarizedCLI\cmd-colors-solarized-master"
 regedit /s solarized-dark.reg
-Invoke-Expression .\Update-StartMenu.ps1
-Set-Location $currentDir
-
-
-# $PowerShellFolder = "$([Environment]::GetFolderPath("MyDocuments"))\WindowsPowerShell"
-
-# regedit /s ..\Misc\SolarizedCLI\solarized-master\solarized-dark.reg
-# Copy-Item "$($PWD)\..\Misc\SolarizedCLI\*" -Destination $PowerShellFolder -Recurse -Force
-
-# $currentDir = $PWD
-# Set-Location $PowerShellFolder\solarized-master
-# Invoke-Expression .\Update-StartMenu.ps1
-# Set-Location $currentDir
+.\Update-StartMenu.ps1
+Set-Location -Path "..\.."
+rm -recurse SolarizedCLI

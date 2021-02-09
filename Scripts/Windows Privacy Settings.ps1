@@ -38,10 +38,9 @@ If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System
 
 #Run o&o shutup
 Write-Host "Running O&O Shutup with Recommended Settings"
-Import-Module BitsTransfer
-Start-BitsTransfer -Source "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -Destination ../Misc/oosu10.exe	
-../Misc/oosu10.exe Misc/ooshutup10.cfg /quiet
-Remove-Item ..\Misc\oosu10.exe
+wget "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -UseBasicParsing -OutFile oosu10.exe
+oosu10.exe Misc/ooshutup10.cfg /quiet
+Remove-Item oosu10.exe
 
 
 #I might go through this mess one day
@@ -195,3 +194,5 @@ Write-Host "Disabling Telemetry..."
 		New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\MRT" | Out-Null
 	}
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\MRT" -Name "DontOfferThroughWUAU" -Type DWord -Value 1
+
+    

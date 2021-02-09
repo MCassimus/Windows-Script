@@ -1,8 +1,10 @@
 7zip
 discord
 geforce-experience
+git
 gimp
 googlechrome
+icue
 powertoys
 sidequest
 spotify
@@ -10,4 +12,6 @@ steam
 sublimetext3
 vscode
 wallcat
+winpcap
+wireshark
 yubico-authenticator

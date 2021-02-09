@@ -3,12 +3,42 @@ This is my personal setup script for windows 10 because I setup too many windows
 
 After running this script, I only need to login (not included in scripts for obvious reasons) and setup any sort of network specific shares/applications.
 
+**Manual tasks to complete after this script is run:**  
+Programs to install manually
+- Misc. games not on NAS/other storage (anything not on steam)
+- Asus Armoury Crate
+	- iCue plugin (replace whole asus folder under plugins)
+- Oculus link
+- Virtual Desktop Streamer
+- Microsoft Store apps
+	- taskbarx
+	- WSL distros (ubuntu & kali primarily)
+	- icloud
+		- configure what to sync  
+
+Logins are for these apps
+- Discord
+- Geforce experience
+- Steam
+	- Configure steam library/default
+	- Show FPS counter in games
+- Chrome
+- Sidequest
+- Spotify
+- Steam
+- VS Code
+- Windows settings
+	- Clipboard sync, microsoft store...
+- Outlook/Office
+	- Add profiles for google/icloud(this needs the app from the microsoft store)/whatever else is used
+
 # Installation (Powershell)
 ## Manual Installation
 `wget https://github.com/MCassimus/Windows-Script/archive/main.zip -UseBasicParsing -OutFile WindowsSetup.zip`  
 `Expand-Archive WindowsSetup.zip`  
 `rm WindowsSetup.zip`  
-`& '.\WindowsSetup\Windows-Script-main\Setup Windows.ps1'`  
+
+Change directory and run the script `Setup Windows.ps1`
 
 ## Automatic Installation One-Liner 
 *Coming soon*  
@@ -111,6 +141,7 @@ After running this script, I only need to login (not included in scripts for obv
 - GUI for script
 	- Maybe create a program to act like the settings app for ease of use and automatically write the .reg file to import. For the apps part, add option to create a shell:startup or shell:common startup shortcut
 - create laptop/desktop versions
+- review windows privacy settings to fix the mess in there
 - Convert scripts into .reg files where applicable (merges seem to be significantly faster)
 - Compare dism features to default so not every single package is listed in the script
 - Context menu edits

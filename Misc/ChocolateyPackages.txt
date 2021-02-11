@@ -6,7 +6,6 @@ gimp
 googlechrome
 icue
 powertoys
-sidequest
 spotify
 steam
 sublimetext3

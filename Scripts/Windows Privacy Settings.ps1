@@ -39,7 +39,7 @@ If (!(Test-Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\System
 #Run o&o shutup
 Write-Host "Running O&O Shutup with Recommended Settings"
 wget "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe" -UseBasicParsing -OutFile oosu10.exe
-oosu10.exe Misc/ooshutup10.cfg /quiet
+.\oosu10.exe Misc/ooshutup10.cfg /quiet
 Remove-Item oosu10.exe
 
 

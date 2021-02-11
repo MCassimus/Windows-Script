@@ -21,13 +21,13 @@ Write-Host "Running setup scripts"
 & '.\Scripts\Windows Privacy Settings.ps1'
 & '.\Scripts\Windows Settings.ps1'
 & '.\Scripts\Windows Updates.ps1'
-& '.\Scripts\Windows Explorer.ps1'
+& '.\Scripts\Windows Explorer Settings.ps1'
 & '.\Scripts\Windows Features.ps1'
 & '.\Scripts\Powershell Theme.ps1'
 & '.\Scripts\Install Chocolatey.ps1'
 & '.\Scripts\Install Packages.ps1'
 & '.\Scripts\Install Office.ps1'
-& '.\Scripts\CleanStartMenu.ps1'
+& '.\Scripts\Clean Start Menu.ps1'
 Write-Host "Ran all scripts"
 
 #Import registry keys from the directory
